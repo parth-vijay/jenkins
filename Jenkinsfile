@@ -9,7 +9,6 @@ pipeline {
     stage('Cloning Git') {
       steps {
         git([url: 'https://github.com/parth1625/monitor-k8s.git', branch: 'master', credentialsId: 'github-credentials'])
-
       }
     }
     stage('Building image') {
